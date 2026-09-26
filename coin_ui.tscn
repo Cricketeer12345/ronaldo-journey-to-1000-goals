@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bi43jdnugtxe0"]
+
+[ext_resource type="Script" uid="uid://cc3s238gkypd8" path="res://coin_ui.gd" id="1_i8ha2"]
+[ext_resource type="Texture2D" uid="uid://cx8f5xtb6x1mm" path="res://ball.all_.png" id="2_kgjm3"]
+
+[node name="CoinUI" type="Control" unique_id=1329066903]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 54.0
+offset_bottom = 61.0
+script = ExtResource("1_i8ha2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1627654902]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.272
+anchor_top = -0.351
+anchor_right = 0.272
+anchor_bottom = -0.351
+offset_left = -21.880001
+offset_top = 3.040001
+offset_right = 101.119995
+offset_bottom = 126.04
+texture = ExtResource("2_kgjm3")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1978063695]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 18.0
+offset_right = 178.0
+offset_bottom = 78.0
+theme_override_font_sizes/font_size = 40
+text = "979"
+horizontal_alignment = 1

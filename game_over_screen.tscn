@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c74p3yrq0bsuc"]
+
+[ext_resource type="Script" uid="uid://dkxj2f1isbhd0" path="res://game_over_screen.gd" id="1_gt22q"]
+
+[node name="GameOverScreen" type="CanvasLayer" unique_id=309577197]
+process_mode = 3
+script = ExtResource("1_gt22q")
+
+[node name="Control" type="Control" parent="." unique_id=1089240136]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="." unique_id=2042825836]
+offset_left = 431.0
+offset_top = 189.0
+offset_right = 658.0
+offset_bottom = 238.0
+text = "Ronaldo Reached 1000 Goals!
+GAME OVER"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1963384742]
+unique_name_in_owner = true
+process_mode = 4
+offset_left = 496.0
+offset_top = 263.0
+offset_right = 589.0
+offset_bottom = 294.0
+text = "Play Again!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
